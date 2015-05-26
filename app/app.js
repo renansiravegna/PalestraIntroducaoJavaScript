@@ -2,8 +2,11 @@ var configuracoes = {
 	baseUrl: "app",
 
 	paths: {
-		"text": "lib/requirejs-text/text"
-	}
+		"text": "lib/requirejs-text/text",
+		"prism": "lib/prism/prism"
+	},
+
+	deps: ["prism"]
 };
 
 require.config(configuracoes);

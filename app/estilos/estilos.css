@@ -1,0 +1,11 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.largura-maxima {
+	width: 100%;
+}
+
+.texto-alinhado-ao-centro {
+	text-align: center;
+}

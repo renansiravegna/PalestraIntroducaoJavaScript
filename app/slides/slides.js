@@ -37,9 +37,14 @@ define([
 		var slideAtual = obterIndexDoSlideAtual();
 
 		require([
-			"slides/" + slideAtual + "/" + slideAtual
-		], function(slide) {
-			slide.exibir();
+			"helpers/gerenciadorDeSlides",
+			"text!slides/" + slideAtual
+		], function(gerenciadorDeSlides, conteudoDoSlideAtual) {
+			gerenciadorDeSlides.titulo("");
+			gerenciadorDeSlides.trocarCorDeFundo();
+			gerenciadorDeSlides.conteudo(conteudoDoSlideAtual);
+
+			Prism.highlightAll();
 		});
 	}
 
