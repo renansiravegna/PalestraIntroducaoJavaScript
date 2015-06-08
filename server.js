@@ -1,6 +1,6 @@
 var connect = require("connect");
 var serveStatic = require("serve-static");
 
-connect().use(serveStatic(__dirname)).listen(8080, function() {
+connect().use(serveStatic(__dirname)).listen(1101, function() {
 	console.log("Servidor iniciado com sucesso");
 });
